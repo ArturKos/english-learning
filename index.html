@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--1"></div>
+    <div class="bg-glow bg-glow--2"></div>
+    <div class="bg-glow bg-glow--3"></div>
+
+    <header class="top-bar">
+        <div class="logo">
+            <span class="logo-icon">📖</span>
+            <span class="logo-text">LearnEnglish</span>
+        </div>
+        <div id="wordOfTheDay" class="word-card">
+            <span class="word-label">Word of the Day</span>
+            <span id="wordPlaceholder" class="word-content"></span>
+            <button id="newWordBtn" class="icon-btn" title="New word">↻</button>
+        </div>
+    </header>
+
+    <main class="viewer">
+        <div class="image-stage">
+            <img id="myImage" src="" alt="English learning material">
+            <img id="myImageNext" src="" alt="" class="preload">
+            <div class="image-overlay-fade"></div>
+        </div>
+
+        <button id="prevBtn" class="nav-btn nav-btn--prev" title="Previous (←)">‹</button>
+        <button id="nextBtn" class="nav-btn nav-btn--next" title="Next (→)">›</button>
+
+        <div class="controls-bar">
+            <div class="counter">
+                <span id="currentIndex">1</span>
+                <span class="counter-sep">/</span>
+                <span id="totalCount">0</span>
+            </div>
+            <div class="timer-wrap">
+                <div id="timerBar" class="timer-bar"></div>
+            </div>
+            <div class="control-buttons">
+                <button id="shuffleBtn" class="ctrl-btn" title="Shuffle">⤮</button>
+                <button id="pauseBtn" class="ctrl-btn" title="Pause / Play (Space)">❚❚</button>
+                <button id="fullscreenBtn" class="ctrl-btn" title="Fullscreen (F)">⛶</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
