@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Logs / env
+*.log
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
